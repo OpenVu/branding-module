@@ -1,2 +1,2 @@
 # branding-module
-Open Vision branding lib
+Open Pli branding lib
