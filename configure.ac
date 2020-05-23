@@ -24,7 +24,7 @@ AX_PTHREAD
 
 AC_ARG_WITH(pliversion,
 	[  --with-pliversion=NAME pli version [[number,...]]],
-	[PLIVERSION="$withval"],[PLINVERSION=""])
+	[PLIVERSION="$withval"],[PLIVERSION=""])
 AC_SUBST(PLIVERSION)
 AC_DEFINE_UNQUOTED(PLIVERSION,"$PLIVERSION",[pli version])
 
@@ -184,30 +184,6 @@ AC_ARG_WITH(arch,
 AC_SUBST(ARCH_TYPE)
 AC_DEFINE_UNQUOTED(ARCH_TYPE,"$ARCH_TYPE",[arch name])
 
-AC_ARG_WITH(tfpu,
-	[  --with-tfpu=NAME tfpu name [[soft,...]]],
-	[TFPU_TYPE="$withval"],[TFPU_TYPE=""])
-AC_SUBST(TFPU_TYPE)
-AC_DEFINE_UNQUOTED(TFPU_TYPE,"$TFPU_TYPE",[tfpu name])
-
-AC_ARG_WITH(display-type,
-	[  --with-display-type=NAME display type [[7segment,textlcd...]]],
-	[DISPLAY_TYPE="$withval"],[DISPLAY_TYPE=""])
-AC_SUBST(DISPLAY_TYPE)
-AC_DEFINE_UNQUOTED(DISPLAY_TYPE,"$DISPLAY_TYPE",[display type])
-
-AC_ARG_WITH(small-flash,
-	[  --with-small-flash=NAME flash type [[smallflash,...]]],
-	[HAVE_SMALLFLASH="$withval"],[HAVE_SMALLFLASH="True"])
-AC_SUBST(HAVE_SMALLFLASH)
-AC_DEFINE_UNQUOTED(HAVE_SMALLFLASH,"$HAVE_SMALLFLASH",[smallflash])
-
-AC_ARG_WITH(middle-flash,
-	[  --with-middle-flash=NAME flash type [[middleflash,...]]],
-	[HAVE_MIDDLEFLASH="$withval"],[HAVE_MIDDLEFLASH="True"])
-AC_SUBST(HAVE_MIDDLEFLASH)
-AC_DEFINE_UNQUOTED(HAVE_MIDDLEFLASH,"$HAVE_MIDDLEFLASH",[middleflash])
-
 AC_ARG_WITH(transcoding,
 	[  --with-transcoding=NAME transcoding [[transcoding,...]]],
 	[HAVE_TRANSCODING="$withval"],[HAVE_TRANSCODING="True"])
@@ -219,12 +195,6 @@ AC_ARG_WITH(multitranscoding,
 	[HAVE_MULTITRANSCODING="$withval"],[HAVE_MULTITRANSCODING="True"])
 AC_SUBST(HAVE_MULTITRANSCODING)
 AC_DEFINE_UNQUOTED(HAVE_MULTITRANSCODING,"$HAVE_MULTITRANSCODING",[multitranscoding])
-
-AC_ARG_WITH(multilib,
-	[  --with-multilib=NAME multilib [[multilib,...]]],
-	[HAVE_MULTILIB="$withval"],[HAVE_MULTILIB="True"])
-AC_SUBST(HAVE_MULTILIB)
-AC_DEFINE_UNQUOTED(HAVE_MULTILIB,"$HAVE_MULTILIB",[multilib])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),
