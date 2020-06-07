@@ -22,30 +22,6 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(pliversion,
-	[  --with-pliversion=NAME pli version [[number,...]]],
-	[PLIVERSION="$withval"],[PLIVERSION=""])
-AC_SUBST(PLIVERSION)
-AC_DEFINE_UNQUOTED(PLIVERSION,"$PLIVERSION",[pli version])
-
-AC_ARG_WITH(plirevision,
-	[  --with-plirevision=NAME pli revision [[number,...]]],
-	[PLIREVISION="$withval"],[PLIREVISION=""])
-AC_SUBST(PLIREVISION)
-AC_DEFINE_UNQUOTED(PLIREVISION,"$PLIREVISION",[pli revision])
-
-AC_ARG_WITH(developername,
-	[  --with-developername=NAME developer name [[persianprince,...]]],
-	[DEVELOPERNAME="$withval"],[DEVELOPERNAME=""])
-AC_SUBST(DEVELOPERNAME)
-AC_DEFINE_UNQUOTED(DEVELOPERNAME,"$DEVELOPERNAME",[developer name])
-
-AC_ARG_WITH(boxbrand,
-	[  --with-boxbrand=NAME box brand [[dreambox,...]]],
-	[BOXBRAND="$withval"],[BOXBRAND=""])
-AC_SUBST(BOXBRAND)
-AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
-
 AC_ARG_WITH(oever,
 	[  --with-oever=NAME oe name [[7.2,...]]],
 	[OE_VER="$withval"],[OE_VER=""])
