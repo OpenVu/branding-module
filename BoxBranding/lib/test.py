@@ -2,10 +2,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import boxbranding
-print("getPliVersion=%s<" %boxbranding.getPliVersion())
-print("getPliRevision=%s<" %boxbranding.getPliRevision())
-print("getDeveloperName=%s<" %boxbranding.getDeveloperName())
-print("getBoxBrand=%s<" %boxbranding.getBoxBrand())
 print("getOEVersion=%s<" %boxbranding.getOEVersion())
 print("getImageDistro=%s<" %boxbranding.getImageDistro())
 print("getBoxType=%s<" %boxbranding.getBoxType())
