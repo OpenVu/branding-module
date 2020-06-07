@@ -70,26 +70,6 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getPliVersion()
-{
-	return strdup(PLIVERSION);
-}
-
-char *_getPliRevision()
-{
-	return strdup(PLIREVISION);
-}
-
-char *_getDeveloperName()
-{
-	return strdup(DEVELOPERNAME);
-}
-
-char *_getBoxBrand()
-{
-	return strdup(BOXBRAND);
-}
-
 char *_getOEVersion()
 {
 	return strdup(OE_VER);
